@@ -1,0 +1,32 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "module": "commonjs",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "outDir": "dist",
+    "rootDir": ".",
+    "resolveJsonModule": true,
+    "typeRoots": [
+      "./node_modules/@types",
+      "src/shared/types"
+    ],
+    "types": [
+      "node",
+      "express",
+      "jest"
+    ]
+  },
+  "include": [
+    "src/**/*",
+    "src/shared/types/**/*",
+    "api/index.ts",
+    "jest.config.ts",
+    "jest.config.unit.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
